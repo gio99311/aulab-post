@@ -1,6 +1,80 @@
 :root{
-    --color-p: purple;
-    --color-s: green;
-    --color-t: blue;
-    --color-a: red;
+    --color-p: #D1E3DD;
+    --color-s: #285943;
+    --color-t: #091E05;
+    --color-a: #6AB547;
+
+}
+
+/* Fonts */
+.titolo{
+    font-family: "Rubik Doodle Shadow", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--color-s);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Onest", sans-serif;
+    color: var(--color-t);
+}
+
+/* Colori */
+.color-p{
+    color: var(--color-p);
+}
+.color-s{
+    color: var(--color-s);
+}
+.color-t{
+    color: var(--color-t);
+}
+.color-a{
+    color: var(--color-a);
+}
+
+/* background */
+.bg-color{
+    background-color: var(--color-p);
+}
+
+/* button */
+.btn-custom{
+    background-color: var(--color-s);
+    color: var(--color-p);
+    background-position: 0 90%;
+    border-style: solid;
+    border-radius: 10px;
+    box-shadow: var(--color-t) 15px 28px 25px -18px;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-block;
+    line-height: 23px;
+    outline: none;
+    padding: .75rem;
+    text-decoration: none;
+    transition: all 0.4s ease-in-out;
+
+}
+
+.btn-custom:hover {
+  box-shadow: var(--color-t) 2px 8px 8px -5px;
+  transform: translate3d(0, 2px, 0);
+}
+
+.btn-custom:focus {
+  box-shadow: var(--color-t) 2px 8px 4px -6px;
+}
+
+/* alert */
+.alert-success{
+    background-color: var(--color-s);
+    color: var(--color-p);
+    border: 2px solid var(--color-t);
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px var(--color-a);
+    text-align: center;
+    
 }
